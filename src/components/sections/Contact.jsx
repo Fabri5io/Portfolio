@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { RevealOnScroll } from "../RevealOnScroll"
 import emailjs from 'emailjs-com'
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export const Contact = () => {
     const [formData, setFormData] = useState({
@@ -91,6 +92,24 @@ export const Contact = () => {
                             Send Message
                         </button>
                     </form>
+                    <div className="flex space-x-6 mt-10">
+                        <a
+                            href="https://github.com/fabri5io"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-gray-400 hover:text-white text-3xl transition-colors"
+                        >
+                            <FaGithub />
+                        </a>
+                        <a
+                            href="https://linkedin.com/in/junior-castillo-8971692a2"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-gray-400 hover:text-blue-500 text-3xl transition-colors"
+                        >
+                            <FaLinkedin />
+                        </a>
+                    </div>
                 </div>
             </RevealOnScroll>
         </section>
