@@ -7,8 +7,13 @@ export const Home = () => {
             <div className="text-center z-10 px-4">
                 <h1 className="text -5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-gray-300 via-gray-400 to-cyan-300
                              bg-clip-text text-transparent leading-right">
-                    Junior Castillo 
+                    Junior Castillo
                 </h1>
+                <img
+                    src="/cat2.gif"
+                    alt="Cat"
+                    className="absolute -top-[-9px] left-[49.5%] w-10 h-auto"
+                />
                 <div className="flex justify-center space-x-4">
                     <a href="#projects"
                         className="bg-blue-500 text-white py-3 px-6 rounded font-medium transition relative overflow-hidden hover:-translate-y-0.5 
