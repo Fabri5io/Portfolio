@@ -1,6 +1,22 @@
 import { RevealOnScroll } from "../RevealOnScroll"
+import { useState, useEffect } from "react";
+
 
 export const Home = () => {
+      const [showArrow, setShowArrow] = useState(true);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setShowArrow(false);
+      } else {
+        setShowArrow(true);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
     return <section id="home"
         className="min-h-screen flex items-center justify-center relative">
         <RevealOnScroll>
@@ -28,5 +44,14 @@ export const Home = () => {
                 </div>
             </div>
         </RevealOnScroll>
+          {showArrow && (
+         <div className="absolute bottom-6 w-full flex justify-center">
+    <img
+      src="/arrow.gif"  
+      alt="Scroll down"
+      className="w-50 h-50 animate-bounce"
+    />
+  </div>
+      )}
     </section>
 }
