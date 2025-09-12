@@ -4,17 +4,21 @@ export const About = () => {
 
     const frontendSkills =
         [
+            "CSS",
+            "Expo",
+            "HTML",
             "React",
-            "Vue",
-            "TypeScript",
-            "TailWindCSS"
+            "React Native",
+            "TailWindCSS",
         ]
     const backendSkills =
         [
             "C++",
+            "Java",
             "Node.js",
             "Python",
-            "C"
+            "TypeScript",
+            "Firebase"
         ]
     return (
         <section
@@ -23,14 +27,18 @@ export const About = () => {
         >
             <RevealOnScroll>
                 <div className="max-w-3xl mx-auto px-4">
-                    <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent text-center">
+                    <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-gray-200 via-gray-400 to-cyan-300 
+                                    bg-clip-text text-transparent text-center">
                         {" "}
                         About me
                     </h2>
-                    <div className="glass rounded-xl p-8 border-white/10 border hover:-translate-y-1 transition-all">
+                    <div className="glass rounded-xl p-8 border-white/30 border hover:-translate-y-1 transition-all">
                         <p className="text-gray-200 mb-6">
-                            Hello I am Junior, I am currently 20 years old studying Mathematics-ComputerScience at, University of California, San Diego
-                            
+                            Hi, I'm Junior. I’m a 20-year-old third-year student 
+                            studying Mathematics and Computer Science at UC San Diego.
+                            My current interests are in statistics and modeling.
+                            I also enjoy coding, whether it be web development or competitive programming
+                            here is some of the stack I'm familiar with.
                         </p>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                             <div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
@@ -73,29 +81,53 @@ export const About = () => {
                     </div>
 
                     <dvi className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
-                        <div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all">
+                        <div className="p-6 rounded-xl border-white/30 border hover:-translate-y-1 transition-all">
                             <h3 className="text-xl font-bold mb-4">
                                 Education
                             </h3>
-                            <ul className="list-disc list-inside text-gray-300 space-y-2">
+                            <ul className="list-disc list-inside text-gray-200 space-y-2">
                                 <li>
-                                    <strong> B.S in Mathematics-Computer Science </strong> - University of California, San Deigo (2023-2026)
+                                    <strong> B.S in Mathematics and Computer Science,</strong> <span className="text-blue-500 font-semibold">UC, San Diego (Expected 2026)</span> 
                                 </li>
                                 <li>
-                                    Relavant Coursework: Data Structures, ....
+                                    <strong>Current Relevant Courses<span className="text-blue-500"> (Fall 2025)</span> </strong>
+                                    <ul className="ml-10 list-disc space-y-1">
+                                        <li>
+                                            Putnam Seminar<br />
+                                            <span className="font-mono">(Math 96)</span>
+                                        </li>
+                                        <li>
+                                            Software Engineering<br />
+                                            <span className="font-mono">(CSE 110)</span>
+                                        </li>
+                                        <li>
+                                            Foundations of Real Analysis I<br />
+                                            <span className="font-mono">(Math 140)</span>
+                                        </li>
+                                        <li>
+                                            Recommender Systems and Web Mining<br />
+                                            <span className="font-mono">(CSE 158)</span>
+                                        </li>
+                                    </ul>
                                 </li>
                             </ul>
                         </div>
 
-                        <div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all">
+                        <div className="p-6 rounded-xl border-white/30 border hover:-translate-y-1 transition-all">
                             <h3 className="text-xl font-bold mb-4">
                                 Work Experience
                             </h3>
-                            <div className="space-y-4 text-gray-300 ">
+                            <div className="space-y-3 text-gray-200 ">
                                 <div>
-                                    <h4 className="font-semibold"> Software Engineer intern at San Diego Super Computer (Summer 2025)</h4>
+                                    <h4 className="font-semibold text-blue-500 leading-tight">Software Engineer Intern – San Diego Supercomputer Center 
+                                       <span className="block font-mono text-gray-200 text-xs -mt-0.5">  June(2025) - September(2025)</span>
+                                        </h4>
                                     {" "}
-                                    <p> What did I do???</p>
+                                    <p className="mt-1.5"> Worked full stack on a student-only selling app. 
+                                        Designed and maintained the Firebase backend to securely handle user profiles, item listings, 
+                                        chat messages, and image data. 
+                                        Implemented user authentication, and image processing features. On the front end, 
+                                        I used React Native to build responsive UI components and screens for listings, profiles, and chat. </p>
                                 </div>
                             </div>
                         </div>
