@@ -33,7 +33,7 @@ export const About = () => {
                         About me
                     </h2>
                     <div className="glass rounded-xl p-8 border-white/30 border hover:-translate-y-1 transition-all">
-                        <p className="text-gray-200 mb-6">
+                        <p className="text-gray-400 mb-6">
                             Hi, I'm Junior. I’m a 20-year-old third-year student 
                             studying Mathematics and Computer Science at UC San Diego.
                             My current interests are in statistics and modeling.
@@ -85,12 +85,12 @@ export const About = () => {
                             <h3 className="text-xl font-bold mb-4">
                                 Education
                             </h3>
-                            <ul className="list-disc list-inside text-gray-200 space-y-2">
+                            <ul className="list-disc list-inside text-gray-400 space-y-2">
                                 <li>
-                                    <strong> B.S in Mathematics and Computer Science,</strong> <span className="text-blue-500 font-semibold">UC, San Diego (Expected 2026)</span> 
+                                    <strong className="text-gray-200"> B.S in Mathematics and Computer Science,</strong> <span className="text-blue-500 font-semibold">UC, San Diego (Expected 2026)</span> 
                                 </li>
-                                <li>
-                                    <strong>Current Relevant Courses<span className="text-blue-500"> (Fall 2025)</span> </strong>
+                                <li className="-mt-1">
+                                    <strong className="text-gray-200">Current Relevant Courses<span className="block text-sm text-blue-500 -mt-0.5"> (Fall 2025)</span> </strong>
                                     <ul className="ml-10 list-disc space-y-1">
                                         <li>
                                             Putnam Seminar<br />
@@ -117,13 +117,13 @@ export const About = () => {
                             <h3 className="text-xl font-bold mb-4">
                                 Work Experience
                             </h3>
-                            <div className="space-y-3 text-gray-200 ">
+                            <div className="space-y-3 text-gray-400 ">
                                 <div>
                                     <h4 className="font-semibold text-blue-500 leading-tight">Software Engineer Intern – San Diego Supercomputer Center 
                                        <span className="block font-mono text-gray-200 text-xs -mt-0.5">  June(2025) - September(2025)</span>
                                         </h4>
                                     {" "}
-                                    <p className="mt-1.5"> Worked full stack on a student-only selling app. 
+                                    <p className="mt-1.5 text-gray-400"> Worked full stack on a student-only selling app. 
                                         Designed and maintained the Firebase backend to securely handle user profiles, item listings, 
                                         chat messages, and image data. 
                                         Implemented user authentication, and image processing features. On the front end, 
