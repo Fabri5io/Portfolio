@@ -18,6 +18,40 @@ export const Projects = () => {
                                 hover:shadow-[0_2px_8px_rgba(59,130,2246,0.1)] transition-all
                                 "
                         >
+                            <h3 className="text-xl font-bold mb-2">Shore</h3>
+                            <p className="text-gray-400 mb-4"> 
+                             A student marketplace app designed to connect students looking to buy and sell products within their campus community. 
+                             The app enables users to easily post items for sale with images, descriptions, and prices, while buyers can browse 
+                             listings through categories or search filters. A built-in chat system allows students to securely message sellers, 
+                             negotiate prices, and arrange exchanges. The platform emphasizes safety by limiting access to verified student accounts, 
+                             creating a trusted environment for transactions. </p>
+                            <div className="flex flex-wrap gap-2 mb-4">
+                                {["ReactNative", "TypeScript", "Expo", "Firebase"].map((tech, key) => (
+                                    <span
+                                        key={key}
+                                        className="bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20
+                                                    hover:shadow-[0_2px_8px_rgba(59,130,2246,0.2)] transition
+                                            "
+                                    >
+                                        {tech}
+
+                                    </span>
+                                ))}
+                            </div>
+                            <div className="flex justify-between items-center">
+                                <a
+                                    href="https://testflight.apple.com/join/BKDhr6VX"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-blue-400 hover:text-blue-300 transition-colors my-4 flex items-center underline"
+                                >
+                                    View Project →
+                                </a>                        </div>
+                        </div>
+                        <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 
+                                hover:shadow-[0_2px_8px_rgba(59,130,2246,0.1)] transition-all
+                                "
+                        >
                             <h3 className="text-xl font-bold mb-2">Tailer Text</h3>
                             <p className="text-gray-400 mb-4"> TailorText is a Chrome extension that is integrated and tailored to your daily life.
                                 It turns any article you're reading into an interactive, AI-powered language learning experience.
