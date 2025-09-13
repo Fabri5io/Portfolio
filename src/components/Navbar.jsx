@@ -1,4 +1,6 @@
 import { useEffect } from "react"
+import me from "../assets/me.gif"; 
+
 
 export const Navbar = ({ menuOpen, setMenuOpen }) => {
 
@@ -10,7 +12,7 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
             <div className="flex justify-between items-center h-16">
                 <a href="/" className="flex items-center">
                     <img
-                        src="/me.gif"
+                        src={me}
                         alt="Logo"
                         className="h-15 w-auto"
                     />
@@ -42,7 +44,7 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
                 </div>
                 <a href="/" className="flex items-center">
                     <img
-                        src="/me.gif"
+                        src={me}
                         alt="Logo2."
                         className="h-15 w-auto"
                     />

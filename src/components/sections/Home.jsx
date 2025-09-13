@@ -1,22 +1,24 @@
 import { RevealOnScroll } from "../RevealOnScroll"
 import { useState, useEffect } from "react";
+import cat from "../../assets/cat2.gif"; 
+import arrow from "../../assets/arrow.gif"; 
 
 
 export const Home = () => {
-    const [showArrow, setShowArrow] = useState(true);
+      const [showArrow, setShowArrow] = useState(true);
 
-    useEffect(() => {
-        const handleScroll = () => {
-            if (window.scrollY > 50) {
-                setShowArrow(false);
-            } else {
-                setShowArrow(true);
-            }
-        };
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setShowArrow(false);
+      } else {
+        setShowArrow(true);
+      }
+    };
 
-        window.addEventListener("scroll", handleScroll);
-        return () => window.removeEventListener("scroll", handleScroll);
-    }, []);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
     return <section id="home"
         className="min-h-screen flex items-center justify-center relative">
         <RevealOnScroll>
@@ -26,7 +28,7 @@ export const Home = () => {
                     Junior Castillo
                 </h1>
                 <img
-                    src="/cat2.gif"
+                    src={cat}
                     alt="Cat"
                     className="absolute -top-[-9px] left-[49.5%] w-10 h-auto"
                 />
@@ -44,14 +46,14 @@ export const Home = () => {
                 </div>
             </div>
         </RevealOnScroll>
-        {showArrow && (
-            <div className="absolute bottom-6 w-full flex justify-center">
-                <img
-                    src="/arrow.gif"
-                    alt="Scroll down"
-                    className="w-50 h-50 animate-bounce"
-                />
-            </div>
-        )}
+          {showArrow && (
+         <div className="absolute bottom-6 w-full flex justify-center">
+    <img
+      src={arrow}  
+      alt="Scroll down"
+      className="w-50 h-50 animate-bounce"
+    />
+  </div>
+      )}
     </section>
 }
