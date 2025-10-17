@@ -52,7 +52,7 @@ export const Projects = () => {
                                 hover:shadow-[0_2px_8px_rgba(59,130,2246,0.1)] transition-all
                                 "
                         >
-                            <h3 className="text-xl font-bold mb-2">Tailer Text</h3>
+                            <h3 className="text-xl font-bold mb-2">Tailor Text</h3>
                             <p className="text-gray-400 mb-4"> TailorText is a Chrome extension that is integrated and tailored to your daily life.
                                 It turns any article you're reading into an interactive, AI-powered language learning experience.
                                 The tool pulls words from any given text you are currently reading,

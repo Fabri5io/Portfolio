@@ -93,10 +93,6 @@ export const About = () => {
                                     <strong className="text-gray-200">Current Relevant Courses<span className="block text-sm text-blue-500 -mt-0.5"> (Fall 2025)</span> </strong>
                                     <ul className="ml-10 list-disc space-y-1">
                                         <li>
-                                            Putnam Seminar<br />
-                                            <span className="font-mono">(Math 96)</span>
-                                        </li>
-                                        <li>
                                             Software Engineering<br />
                                             <span className="font-mono">(CSE 110)</span>
                                         </li>
