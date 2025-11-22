@@ -14,6 +14,7 @@ export const About = () => {
     const backendSkills =
         [
             "C++",
+            "go",
             "Java",
             "Node.js",
             "Python",
@@ -36,7 +37,8 @@ export const About = () => {
                         <p className="text-gray-400 mb-6">
                             Hi, I'm Junior. I’m a 20-year-old third-year student 
                             studying Mathematics and Computer Science at UC San Diego.
-                            My current interests are in statistics and modeling.
+                            Currently working at SDSC creating go clients that interact 
+                            with SDSC internal ITA. My current interests are in Mathematics and Statistics.
                             I also enjoy coding, whether it be web development or competitive programming
                             here is some of the stack I'm familiar with.
                         </p>
@@ -97,10 +99,6 @@ export const About = () => {
                                             <span className="font-mono">(CSE 110)</span>
                                         </li>
                                         <li>
-                                            Foundations of Real Analysis I<br />
-                                            <span className="font-mono">(Math 140)</span>
-                                        </li>
-                                        <li>
                                             Recommender Systems and Web Mining<br />
                                             <span className="font-mono">(CSE 158)</span>
                                         </li>
@@ -108,12 +106,20 @@ export const About = () => {
                                 </li>
                             </ul>
                         </div>
-
+                        
                         <div className="p-6 rounded-xl border-white/30 border hover:-translate-y-1 transition-all">
                             <h3 className="text-xl font-bold mb-4">
                                 Work Experience
                             </h3>
                             <div className="space-y-3 text-gray-400 ">
+                                <div>
+                                    <h4 className="font-semibold text-blue-500 leading-tight"> Software Engineer – UC San Diego Supercomputer Center
+                                        <span className ="block font-mono text-gray-200 text-xs -mt-0.5"> October(2025) - Present</span>
+                                    </h4>
+                                    {""}
+                                    <p className="mt-1.5 text-gray-400"> Working on creating go clients that interact with SDSC internal ITA. </p>
+
+                                </div>
                                 <div>
                                     <h4 className="font-semibold text-blue-500 leading-tight">Software Engineer Intern – San Diego Supercomputer Center 
                                        <span className="block font-mono text-gray-200 text-xs -mt-0.5">  June(2025) - September(2025)</span>
