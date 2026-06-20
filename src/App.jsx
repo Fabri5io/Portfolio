@@ -17,7 +17,7 @@ function App() {
 
   return( <>
   {!isLoaded && <LoadingScreen onComplete = {() => setIsLoaded(true)} />}
-  <SectionNav />
+  <SectionNav visible={isLoaded} />
     <div className ={`min-h-screen transition-opacity duration-700 ${
       isLoaded ? "opacity-100" : "opacity-0"
       } bg-[#41424c] text-grey-100`}

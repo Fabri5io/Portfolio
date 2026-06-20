@@ -7,7 +7,7 @@ const sections = [
   { id: "contact",  label: "Contact"  },
 ];
 
-export const SectionNav = () => {
+export const SectionNav = ({ visible }) => {
   const [active, setActive] = useState("home");
 
   useEffect(() => {
@@ -27,7 +27,7 @@ export const SectionNav = () => {
   }, []);
 
   return (
-    <div className="fixed left-5 top-1/2 -translate-y-1/2 z-50 hidden md:flex flex-col gap-3 items-center">
+    <div className={`fixed left-5 top-1/2 -translate-y-1/2 z-50 hidden md:flex flex-col gap-3 items-center transition-opacity duration-700 ${visible ? "opacity-100" : "opacity-0"}`}>
       {sections.map(({ id, label }) => (
         <a
           key={id}
